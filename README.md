@@ -1,1 +1,4 @@
 # ESP8266_AP2HOST
+An ESP8266 example project to retrieve WiFi network credentials dynamically and connect to different networks without relying on the hard-coded credentials of your code.     
+
+The provided code snippets are an attempt to make your projects portable without the need of code recompilation with the appropriate WiFi credentials each time. The device serves as an Access Point and upon connection, through a very basic form, a user can input credentials for a desired network. On successful WiFi connection the device stops acting as an Access Point and finally becomes a host in the network. Last successful credentials are stored in the file system via LittleFS and will always be checked first before entering Access Point mode so you won't have to connect the device on the same network more than once.    
